@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tower of Trials | Maze Game</title>
+
+  <meta name="description" content="Tower of Trials is a fast-paced maze adventure with multiple paths, challenges, and PWA support." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__logo">
+      <span class="logo-badge"></span>
+      <span class="logo-text">Tower of Trials</span>
+    </div>
+
+    <nav class="nav__links">
+      <a href="#play">Play</a>
+      <a href="#video">Video</a>
+      <a href="#features">Features</a>
+      <a href="#characters">Characters</a>
+      <a href="#install">Install</a>
+      <a href="assets/TowerOfTrials-InfoSheet.pdf" target="_blank" rel="noopener">Info Sheet</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <h1>Escape the Tower.</h1>
+        <p>
+          A maze adventure built with speed, strategy, and replayability.
+          Discover multiple paths, beat your best time, and master the trials.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#play">Play Now</a>
+          <a class="btn btn--ghost" href="#features">See Features</a>
+        </div>
+
+        <div class="hero__meta">
+          <span class="pill">PWA Ready</span>
+          <span class="pill">Desktop + Mobile</span>
+          <span class="pill">Time Trials</span>
+        </div>
+      </div>
+
+      <div class="hero__art">
+        <!-- Replace with your main hero image (e.g., key art or logo) -->
+        <img src="assets/Hero.png" alt="Tower of Trials hero character" />
+      </div>
+    </section>
+
+    <!-- PLAY SECTION -->
+    <section id="play" class="section">
+      <div class="section__head">
+        <h2>Play the Game</h2>
+        <p>Launch the live gameplay site.</p>
+      </div>
+
+      <div class="play-card">
+        <!-- IMPORTANT: Replace href with your actual gameplay URL -->
+        <a class="btn btn--primary btn--large" href="https://csci591usca.github.io/MazeGame/" target="_blank" rel="noopener">
+            Open Gameplay Site
+        </a>
+      </div>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="video" class="section section--alt">
+      <div class="section__head">
+        <h2>Gameplay Video</h2>
+        <p>A short clip of actual gameplay.</p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Option A: Local MP4 -->
+        <video controls preload="metadata" class="video-card">
+          <source src="assets/gameplayvideo.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+
+    <!-- FEATURES + SCREENSHOTS -->
+    <section id="features" class="section">
+      <div class="section__head">
+        <h2>Main Features</h2>
+      </div>
+
+      <div class="features">
+        <article class="feature-card">
+          <h3>Multiple Routes</h3>
+          <p>Choose different paths to the exit for replayable runs.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Score</h3>
+          <p>Shoot as many enemies as possible to get the highest score.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Mobile Controls</h3>
+          <p>Smooth movement and responsive UI for phone play.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Offline Play</h3>
+          <p>Install as a PWA and play even with no connection.</p>
+        </article>
+      </div>
+
+      <div class="screenshots">
+        <img src="assets/gameplayscreenshot1.png" alt="Gameplay screenshot 1" />
+        <img src="assets/gameplayscreenshot2.png" alt="Gameplay screenshot 2" />
+      </div>
+    </section>
+
+    <!-- CHARACTERS -->
+    <section id="characters" class="section section--alt">
+      <div class="section__head">
+        <h2>Main Characters</h2>
+        <p>Meet the hero and the enemy of the Tower of Trials.</p>
+      </div>
+
+      <div class="characters">
+        <article class="character-card">
+            <img src="assets/Hero.png" alt="Main hero character" />
+            <div>
+                <h3>The Hero</h3>
+                <p>The main character who navigates the tower’s platform trials and maze-like routes.</p>
+            </div>
+        </article>
+
+        <article class="character-card">
+            <img src="assets/enemy.png" alt="Enemy character" />
+            <div>
+                <h3>The Enemy</h3>
+                <p>A dangerous obstacle designed to punish mistakes and raise difficulty across levels.</p>
+            </div>
+        </article>
+    </div>
+
+    </section>
+
+    <!-- PWA INSTALL INSTRUCTIONS -->
+    <section id="install" class="section">
+      <div class="section__head">
+        <h2>Installation</h2>
+        <p>How to install this game on Android, iOS, and Desktop.</p>
+      </div>
+
+      <div class="install-grid">
+        <article class="install-card">
+          <h3>Android (Chrome)</h3>
+          <ol>
+            <li>Open the game site in Chrome.</li>
+            <li>Tap the three-dot menu.</li>
+            <li>Select <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+            <li>Launch the app from your home screen.</li>
+          </ol>
+        </article>
+
+        <article class="install-card">
+          <h3>iOS (Safari)</h3>
+          <ol>
+            <li>Open the game site in Safari.</li>
+            <li>Tap the <strong>Share</strong> icon.</li>
+            <li>Select <strong>Add to Home Screen</strong>.</li>
+            <li>Name it and tap <strong>Add</strong>.</li>
+          </ol>
+        </article>
+
+        <article class="install-card">
+          <h3>Desktop (Chrome / Edge)</h3>
+          <ol>
+            <li>Open the game site.</li>
+            <li>Look for the install icon in the address bar.</li>
+            <li>Click <strong>Install</strong>.</li>
+            <li>Launch it from your apps list or desktop shortcut.</li>
+          </ol>
+        </article>
+      </div>
+
+      
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <span>© <span id="year"></span> Tower of Trials</span>
+        <span class="footer__dot">•</span>
+        <span>Built as a course project</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
