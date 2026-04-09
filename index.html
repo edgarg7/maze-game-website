@@ -27,6 +27,7 @@
       <a href="#video">Video</a>
       <a href="#features">Features</a>
       <a href="#characters">Characters</a>
+      <a href="#feedback">Feedback</a>
       <a href="#install">Install</a>
       <a href="assets/TowerOfTrials-InfoSheet.pdf" target="_blank" rel="noopener">Info Sheet</a>
     </nav>
@@ -140,13 +141,77 @@
         <article class="character-card">
             <img src="assets/enemy.png" alt="Enemy character" />
             <div>
-                <h3>The Enemy</h3>
-                <p>A dangerous obstacle designed to punish mistakes and raise difficulty across levels.</p>
+              <h3>The Enemy</h3>
+              <p>A dangerous obstacle designed to punish mistakes and raise difficulty across levels.</p>
             </div>
         </article>
-    </div>
 
+        <article class="character-card">
+          <img src="assets/enemyoutlaw.png" alt="Outlaw enemy character"/>
+          <div>
+            <h3>The Outlaw</h3>
+            <p>A fast and dangerous enemy that adds extra pressure during the tower's harder encounters.</p>
+          </div>
+        </article>
+
+        <article class="character-card">
+          <img src="assets/enemyscout.png" alt="Scout enemy character"/>
+          <div>
+            <h3>The Scout</h3>
+            <p>A quick and agile enemy that patrols the tower's corridors, making it harder to navigate.</p>
+          </div>
+        </article>
+      </div>
     </section>
+
+    <!-- FEEDBACK -->
+     <section id="feedback" class="section section--alt">
+      <div class="section__head">
+        <h2>Player feedback</h2>
+        <p>Tell us what you liked, what needs improvement, and report any bugs you found.</p>
+      </div>
+
+      <div class="feedback-wrap">
+        <form
+          action="https://formspree.io/f/xnjoynyo"
+          method="POST"
+          class="feedback-form"
+        >
+          <label for="player-name">Player name</label>
+          <input type="text" id="player-name" name="name" placeholder="Enter your name:" />
+
+          <label for="player-email">Email (optional)</label>
+          <input type="email" id="player-email" name="email" placeholder="Enter your email:" />
+
+          <label for="rating">Game Rating</label>
+          <select id="rating" name="rating">
+            <option value="">Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Needs Improvement</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <label for="device">Device Used</label>
+          <select id="device" name="device">
+            <option value="">Select your device</option>
+            <option value="desktop">Desktop</option>
+            <option value="mobile">Mobile</option>
+          </select>
+
+          <label for="comments">Additional Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            placeholder="Share your thoughts about the game..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn btn--primary" btn--large>Submit Feedback</button>
+        </form>
+      </div>
+     </section>
 
     <!-- PWA INSTALL INSTRUCTIONS -->
     <section id="install" class="section">
